@@ -1,5 +1,5 @@
 import { buildConfig } from 'payload'
-import { mongooseAdapter } from '@payloadcms/db-mongodb'
+import { sqliteAdapter } from '@payloadcms/db-sqlite'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import path from 'path'
 import { fileURLToPath } from 'url'
@@ -30,8 +30,11 @@ export default buildConfig({
   typescript: {
     outputFile: path.resolve(dirname, '../types/payload-types.ts'),
   },
-  db: mongooseAdapter({
-    url: process.env.MONGODB_URI || 'mongodb://localhost:27017/techrise-academy',
+  db: sqliteAdapter({
+    client: {
+      url: process.env.TURSO_DATABASE_URL || 'file:./techrise.db',
+      authToken: process.env.TURSO_AUTH_TOKEN,
+    },
   }),
   upload: {
     limits: {

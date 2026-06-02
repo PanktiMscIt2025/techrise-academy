@@ -18,7 +18,6 @@ const quickLinks = [
   { label: 'About TechRise', href: '/about' },
   { label: 'Hiring Partners', href: '/about#hiring-partners' },
   { label: 'Contact Us', href: '/contact' },
-  { label: 'Enrol Now', href: '/contact' },
 ]
 
 export default function Footer() {

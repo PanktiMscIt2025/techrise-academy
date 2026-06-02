@@ -69,10 +69,15 @@ export default function ContactPage() {
     e.preventDefault()
     setLoading(true)
     try {
-      await fetch('/api/enquiries', {
+      await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
+        body: JSON.stringify({
+          access_key: 'ca2ac1cf-5774-4604-a1ab-49309e6265ff',
+          subject: `New Enquiry from ${form.name} — TechRise Academy`,
+          from_name: 'TechRise Academy Contact Form',
+          ...form,
+        }),
       })
     } catch {
       // fail silently — show success regardless
