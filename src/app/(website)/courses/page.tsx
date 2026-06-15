@@ -190,13 +190,13 @@ export default function CoursesPage() {
       {/* Hero */}
       <section
         className="py-16 text-center"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 45%, #A855F7 100%)' }}
       >
         <div className="max-w-7xl mx-auto px-5">
           <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-white mb-4">
             7 Flagship Technology Tracks
           </h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
+          <p className="text-white/85 text-lg max-w-2xl mx-auto mb-8">
             Industry-designed, mentor-led, outcome-focused. Pick a track and start building your tech career today.
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-sm">
@@ -447,13 +447,13 @@ export default function CoursesPage() {
       {/* CTA */}
       <section
         className="py-14 text-center"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E, #112244)' }}
+        style={{ background: 'linear-gradient(135deg, #E8652A 0%, #F59E0B 60%, #E8652A 100%)' }}
       >
         <div className="max-w-2xl mx-auto px-5">
           <h2 className="font-heading font-bold text-3xl text-white mb-4">
             Not sure which track is right for you?
           </h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-white/90 mb-6">
             Book a free 20-minute counselling call. We&apos;ll assess your background and recommend the best track and mode.
           </p>
           <Link href="/contact" className="btn-primary text-base px-8 py-3.5">

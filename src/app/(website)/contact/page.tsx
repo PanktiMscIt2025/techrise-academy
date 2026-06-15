@@ -95,13 +95,13 @@ export default function ContactPage() {
       {/* Hero */}
       <section
         className="py-16 text-center"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 45%, #A855F7 100%)' }}
       >
         <div className="max-w-2xl mx-auto px-5">
           <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-white mb-4">
             Let&apos;s Get You Placed
           </h1>
-          <p className="text-gray-300 text-lg">
+          <p className="text-white/85 text-lg">
             Fill in the form below or WhatsApp us directly. Free counselling, no hard sell.
           </p>
         </div>

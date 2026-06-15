@@ -49,13 +49,13 @@ export default function AboutPage() {
       {/* Hero */}
       <section
         className="py-16"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 45%, #A855F7 100%)' }}
       >
         <div className="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-12 items-center">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }}>
             <div
               className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold mb-6 border"
-              style={{ borderColor: 'rgba(232,101,42,0.4)', background: 'rgba(232,101,42,0.1)', color: '#E8652A' }}
+              style={{ borderColor: 'rgba(255,255,255,0.4)', background: 'rgba(255,255,255,0.15)', color: '#fff' }}
             >
               Our Story
             </div>
@@ -63,10 +63,10 @@ export default function AboutPage() {
               Built by Learners,{' '}
               <span style={{ color: '#E8652A' }}>For Learners</span>
             </h1>
-            <p className="text-gray-300 text-lg leading-relaxed mb-6">
+            <p className="text-white/85 text-lg leading-relaxed mb-6">
               TechRise Academy was founded with one question: why do so many talented graduates fail to get placed, despite studying hard?
             </p>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-white/70 leading-relaxed">
               The answer wasn&apos;t talent — it was the gap between textbook knowledge and what companies actually test for. TechRise bridges that gap with real mentors, real projects, and real placement preparation.
             </p>
           </motion.div>
@@ -79,11 +79,11 @@ export default function AboutPage() {
             className="grid grid-cols-2 gap-4"
           >
             {stats.map((s) => (
-              <div key={s.label} className="glass-card p-6 text-center">
+              <div key={s.label} className="rounded-2xl p-6 text-center shadow-xl border border-white/20" style={{ background: 'rgba(255,255,255,0.95)' }}>
                 <div className="font-heading font-extrabold text-4xl mb-1" style={{ color: '#E8652A' }}>
                   <CountUp end={s.end} duration={2.5} suffix={s.suffix} enableScrollSpy scrollSpyOnce />
                 </div>
-                <div className="text-sm text-gray-300">{s.label}</div>
+                <div className="text-sm font-medium" style={{ color: '#1E1B4B' }}>{s.label}</div>
               </div>
             ))}
           </motion.div>
@@ -245,13 +245,13 @@ export default function AboutPage() {
       {/* CTA */}
       <section
         className="py-14 text-center"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E, #112244)' }}
+        style={{ background: 'linear-gradient(135deg, #E8652A 0%, #F59E0B 60%, #E8652A 100%)' }}
       >
         <div className="max-w-xl mx-auto px-5">
           <h2 className="font-heading font-bold text-3xl text-white mb-4">
             Ready to join the TechRise family?
           </h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-white/90 mb-6">
             500+ students have already made the leap. Your turn.
           </p>
           <Link href="/contact" className="btn-primary text-base px-8 py-3.5">

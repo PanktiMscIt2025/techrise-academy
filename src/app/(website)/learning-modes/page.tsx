@@ -155,13 +155,13 @@ export default function LearningModesPage() {
       {/* Hero */}
       <section
         className="py-16 text-center"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 45%, #A855F7 100%)' }}
       >
         <div className="max-w-3xl mx-auto px-5">
           <h1 className="font-heading font-extrabold text-4xl md:text-5xl text-white mb-4">
             Choose Your Learning Mode
           </h1>
-          <p className="text-gray-300 text-lg">
+          <p className="text-white/85 text-lg">
             Three modes, one goal — job-ready in the shortest time possible. Pick what fits your life.
           </p>
         </div>
@@ -243,7 +243,7 @@ export default function LearningModesPage() {
           <div className="overflow-x-auto rounded-2xl border border-gray-200 shadow-card">
             <table className="w-full text-sm">
               <thead>
-                <tr style={{ background: '#0D1B3E' }}>
+                <tr style={{ background: 'linear-gradient(135deg, #4F46E5, #7C3AED)' }}>
                   <th className="text-left px-6 py-4 text-gray-300 font-medium">Feature</th>
                   <th className="px-6 py-4 text-center font-bold text-white">
                     <div className="text-base">🎓</div>1:1 Mentorship
@@ -367,13 +367,13 @@ export default function LearningModesPage() {
       {/* CTA */}
       <section
         className="py-14 text-center"
-        style={{ background: 'linear-gradient(135deg, #0D1B3E, #112244)' }}
+        style={{ background: 'linear-gradient(135deg, #E8652A 0%, #F59E0B 60%, #E8652A 100%)' }}
       >
         <div className="max-w-xl mx-auto px-5">
           <h2 className="font-heading font-bold text-3xl text-white mb-4">
             Ready to enrol?
           </h2>
-          <p className="text-gray-300 mb-6">
+          <p className="text-white/90 mb-6">
             Pick a track, pick a mode, and get started. Free counselling available.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
