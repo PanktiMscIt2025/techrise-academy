@@ -101,7 +101,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <div className="text-sm" style={{ color: '#F59E0B' }}>★★★★★ <span className="text-white font-bold">4.9/5</span></div>
-                <div className="text-xs text-gray-400">from 500+ students placed in top companies</div>
+                <div className="text-xs text-white/70">from 500+ students placed in top companies</div>
               </div>
             </div>
 
@@ -115,7 +115,7 @@ export default function HeroSection() {
                   >
                     <CountUp end={s.end} duration={2} suffix={s.suffix} enableScrollSpy scrollSpyOnce />
                   </div>
-                  <div className="text-xs text-gray-400 mt-0.5">{s.label}</div>
+                  <div className="text-xs text-white/70 mt-0.5">{s.label}</div>
                 </div>
               ))}
             </div>
@@ -141,8 +141,8 @@ export default function HeroSection() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 + i * 0.07 }}
-                /* Alternate even/odd cards with a float offset so they bob at different phases */
-                className={`glass-card p-4 relative ${i % 2 === 0 ? 'animate-float' : 'animate-float [animation-delay:1.5s]'}`}
+                className={`relative p-4 rounded-2xl shadow-xl border border-white/20 ${i % 2 === 0 ? 'animate-float' : 'animate-float [animation-delay:1.5s]'}`}
+                style={{ background: 'rgba(255,255,255,0.95)' }}
               >
                 {card.popular && (
                   <span
@@ -153,8 +153,8 @@ export default function HeroSection() {
                   </span>
                 )}
                 <div className="text-2xl mb-2">{card.icon}</div>
-                <div className="font-heading font-bold text-white text-sm">{card.title}</div>
-                <div className="text-xs text-gray-400 mt-0.5">{card.sub}</div>
+                <div className="font-heading font-bold text-sm" style={{ color: '#1E1B4B' }}>{card.title}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{card.sub}</div>
               </motion.div>
             ))}
           </motion.div>
