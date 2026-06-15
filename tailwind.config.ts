@@ -79,6 +79,7 @@ const config: Config = {
         'float': 'float 3s ease-in-out infinite',
         'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'whatsapp-ping': 'whatsappPing 2s ease-in-out infinite',
+        'marquee': 'marquee 30s linear infinite',
       },
       keyframes: {
         fadeUp: {
@@ -96,6 +97,10 @@ const config: Config = {
         whatsappPing: {
           '0%, 100%': { transform: 'scale(1)' },
           '50%': { transform: 'scale(1.12)' },
+        },
+        marquee: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
         },
       },
       borderRadius: {

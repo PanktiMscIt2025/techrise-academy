@@ -74,6 +74,31 @@ export default function HeroSection() {
               </Link>
             </div>
 
+            {/* Trust row — avatars + rating */}
+            <div className="flex items-center gap-3 mb-8">
+              <div className="flex -space-x-2.5">
+                {[
+                  { initials: 'RM', color: '#3B82F6' },
+                  { initials: 'PS', color: '#10B981' },
+                  { initials: 'KP', color: '#06B6D4' },
+                  { initials: 'SJ', color: '#8B5CF6' },
+                  { initials: 'AD', color: '#E8652A' },
+                ].map((a) => (
+                  <div
+                    key={a.initials}
+                    className="w-9 h-9 rounded-full flex items-center justify-center text-white text-xs font-bold border-2"
+                    style={{ backgroundColor: a.color, borderColor: '#0D1B3E' }}
+                  >
+                    {a.initials}
+                  </div>
+                ))}
+              </div>
+              <div>
+                <div className="text-sm" style={{ color: '#F59E0B' }}>★★★★★ <span className="text-white font-bold">4.9/5</span></div>
+                <div className="text-xs text-gray-400">from 500+ students placed in top companies</div>
+              </div>
+            </div>
+
             {/* Stats row — animated CountUp */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {stats.map((s) => (

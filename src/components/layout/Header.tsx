@@ -22,7 +22,7 @@ export default function Header() {
     <>
       {/* Announce bar */}
       <div className="announce-bar text-center py-2 px-4 text-xs sm:text-sm font-medium text-white">
-        🚀 New batch starting May 2025 &nbsp;·&nbsp; Limited seats&nbsp;
+        🚀 New batch starting July 2026 &nbsp;·&nbsp; Limited seats&nbsp;
         <Link href="/contact" className="underline underline-offset-2 font-bold hover:text-saffron transition-colors">
           Enrol Now →
         </Link>
