@@ -11,6 +11,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        indigo: {
+          DEFAULT: '#4F46E5',
+          50: '#eef2ff',
+          100: '#e0e7ff',
+          600: '#4F46E5',
+          700: '#4338CA',
+          800: '#3730A3',
+          900: '#312E81',
+          950: '#1E1B4B',
+        },
+        violet: {
+          DEFAULT: '#7C3AED',
+          400: '#A78BFA',
+          500: '#8B5CF6',
+          600: '#7C3AED',
+          700: '#6D28D9',
+        },
         navy: {
           DEFAULT: '#0D1B3E',
           50: '#e8ecf4',
@@ -63,7 +80,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'hero-gradient': 'linear-gradient(135deg, #0D1B3E 0%, #112244 40%, #0D2050 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 45%, #A855F7 100%)',
         'saffron-gradient': 'linear-gradient(135deg, #E8652A, #d4541a)',
         'card-gradient': 'linear-gradient(135deg, rgba(232,101,42,0.08) 0%, rgba(59,130,246,0.08) 100%)',
       },

@@ -15,13 +15,19 @@ export default function HeroSection() {
   return (
     <section
       className="relative overflow-hidden py-20 lg:py-28"
-      style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 50%, #0D2050 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #4F46E5 0%, #7C3AED 45%, #A855F7 100%)' }}
     >
-      {/* Background glow */}
+      {/* Background glows */}
+      <div
+        className="absolute inset-0 opacity-25 pointer-events-none"
+        style={{
+          background: 'radial-gradient(ellipse at 70% 30%, rgba(232,101,42,0.5) 0%, transparent 50%)',
+        }}
+      />
       <div
         className="absolute inset-0 opacity-20 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 60% 40%, rgba(232,101,42,0.35) 0%, transparent 60%)',
+          background: 'radial-gradient(ellipse at 10% 80%, rgba(14,165,233,0.4) 0%, transparent 50%)',
         }}
       />
 

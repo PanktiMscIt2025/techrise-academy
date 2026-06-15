@@ -41,7 +41,7 @@ export default function EnquirySection() {
     <section
       className="py-20"
       id="enquire"
-      style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #E8652A 0%, #F59E0B 60%, #E8652A 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-5">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -57,9 +57,9 @@ export default function EnquirySection() {
               style={{ letterSpacing: '-0.02em' }}
             >
               Ready to Start Your{' '}
-              <span style={{ color: '#E8652A' }}>Tech Journey?</span>
+              <span style={{ color: '#1E1B4B' }}>Tech Journey?</span>
             </h2>
-            <p className="text-gray-300 text-lg mb-8">
+            <p className="text-white/90 text-lg mb-8">
               Get free career counselling. We&apos;ll help you pick the right track and mode based on your goals and background.
             </p>
 
@@ -69,7 +69,7 @@ export default function EnquirySection() {
                 { icon: '✉️', text: 'techrisewithai@gmail.com' },
                 { icon: '💬', text: 'WhatsApp us anytime' },
               ].map((item) => (
-                <div key={item.text} className="flex items-center gap-3 text-gray-300">
+                <div key={item.text} className="flex items-center gap-3 text-white/90">
                   <span className="text-xl">{item.icon}</span>
                   <span>{item.text}</span>
                 </div>

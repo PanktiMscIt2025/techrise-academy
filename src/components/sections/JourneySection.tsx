@@ -35,13 +35,13 @@ export default function JourneySection() {
     <section
       className="py-20 relative overflow-hidden"
       id="journey"
-      style={{ background: 'linear-gradient(135deg, #0D1B3E 0%, #112244 50%, #0D2050 100%)' }}
+      style={{ background: 'linear-gradient(135deg, #0EA5E9 0%, #6366F1 55%, #7C3AED 100%)' }}
     >
       {/* Background glow */}
       <div
-        className="absolute inset-0 opacity-15 pointer-events-none"
+        className="absolute inset-0 opacity-20 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse at 50% 0%, rgba(232,101,42,0.4) 0%, transparent 55%)',
+          background: 'radial-gradient(ellipse at 50% 0%, rgba(255,255,255,0.25) 0%, transparent 55%)',
         }}
       />
 

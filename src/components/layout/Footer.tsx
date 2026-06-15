@@ -22,7 +22,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: '#0D1B3E' }} className="text-gray-300">
+    <footer style={{ background: 'linear-gradient(135deg, #1E1B4B 0%, #312E81 100%)' }} className="text-gray-300">
       <div className="max-w-7xl mx-auto px-5 pt-14 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
           {/* Brand */}
