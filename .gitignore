@@ -30,3 +30,12 @@ next-env.d.ts
 src/types/payload-types.ts
 
 .vercel
+
+# local working files (student data, screenshots, logs)
+marksheet-workspace/
+.playwright-mcp/
+__pycache__/
+/*.jpeg
+/*.log
+/dev-*.txt
+/devlog.txt
